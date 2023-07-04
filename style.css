@@ -646,50 +646,48 @@ color: black;
       100% {
         content: "|";
       }}
+
+
       @media screen and (max-width: 768px) {
-       .container{
-        width: 100%;
-       }
-       .col-12{
-        width: 100%;
-       }
-      .about .col-md-7{
-        margin-top:80px ;
-      }
-      .services .ser-card {
-        /* width: 30rem; */
-        /* margin-left: 0px; */
-        /* background-color: blue; */
-        /* padding: 0; */
-      }
-      
-      .services .card-body{
-       /* background-color: #343a40; */
-       /* width: 50rem; */
-       margin: 0;
-       
-       padding-bottom: 40px;
-       
-      }
-      .services .row{
-        margin-left: 0px;
-      }
-      .services .container .row{
-        width: 100%;
-      }
-      .services {
-        width: 100%;
-      }
-      .services .col-lg-4{
-        width: 100%;
-      }
-      .portfolio .card{
-        
-          margin: 0 auto;
-          max-width: 22rem;
+        .container {
           width: 100%;
         }
-        .email{
+        .col-12 {
+          width: 100%;
+        }
+        .about .col-md-7 {
+          margin-top: 80px;
+        }
+        .services .ser-card {
+          /* width: 30rem; */
+          /* margin-left: 0px; */
+          /* background-color: blue; */
+          /* padding: 0; */
+        }
+        .services .card-body {
+          /* background-color: #343a40; */
+          /* width: 50rem; */
+          margin: 0;
+          padding-bottom: 40px;
+        }
+        .services .row {
+          margin-left: 0px;
+        }
+        .services .container .row {
+          width: 100%;
+        }
+        .services {
+          width: 100%;
+        }
+        .services .col-lg-4 {
+          width: 100%;
+        }
+        .portfolio .card {
+          margin: 0 auto;
+          /* max-width: 22rem; */
+          width: 100%;
+        }
+        .email {
           margin-top: 20px;
         }
         .clients .row {
@@ -697,8 +695,9 @@ color: black;
           justify-content: center;
         }
         .clients .col-lg-3 {
-          flex-basis: 45%;
+          flex-basis: auto;
           margin: 0.5rem;
+          /* margin-left: 0; */
         }
       }
       
