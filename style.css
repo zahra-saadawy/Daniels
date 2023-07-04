@@ -662,7 +662,7 @@ color: black;
         /* background-color: blue; */
         /* padding: 0; */
       }
-     
+      
       .services .card-body{
        /* background-color: #343a40; */
        /* width: 50rem; */
@@ -691,6 +691,14 @@ color: black;
         }
         .email{
           margin-top: 20px;
+        }
+        .clients .row {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+        .clients .col-lg-3 {
+          flex-basis: 45%;
+          margin: 0.5rem;
         }
       }
       
