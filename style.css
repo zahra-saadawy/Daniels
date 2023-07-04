@@ -1,0 +1,696 @@
+/* ------------------Navbar------------------------- */
+.navbar .nav-link, .navbar-brand{
+    color: white;
+    font-weight:800;
+    font-size: 18px;
+    font-family: Montserrat, sans-serif;
+}
+.navbar .nav-link{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Poppins, sans-serif;
+}
+.navbar-nav.custom-nav {
+    display: flex;
+    justify-content: space-around;
+    
+    width: 60%;
+    padding-top: 18px;
+  }
+  .navbar-nav .nav-link.active {
+    text-decoration: underline;
+    color: white;
+  }
+   /* .scrolled {
+    color: black !important;
+    background-color: blue !important;
+    
+    } */
+  
+/* -----------------Home---------------------------- */
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)), url(imgs/bg.jpg);
+    background-size: cover;
+    height: 100vh;
+   
+}
+.hello-title{
+    line-height: 55px;
+    font-size: 50px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 800;
+    margin-top: 60px;
+}
+.i-am-title{
+    line-height: 72px;
+    font-size: 60px;
+    font-weight: 200;
+    margin-top: 30px;
+}
+.i-am-title::after{
+    content: "  |";
+    animation-name: larry;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+
+
+}
+.iconss{
+    margin-top: 30px;
+    
+}
+.iconss span i{
+    
+    color: white;
+    font-size: 14px;
+    background-color: transparent;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+}
+.iconss .col{
+    padding: 2px;
+}
+ 
+
+/* --------------About----------------- */
+.progress {
+    height: 25px;
+  }
+
+  .progress-bar {
+    height: 100%;
+  }
+
+.about-btn{
+
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.about .hero:after {
+  content: "";
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  left: 0px;
+  bottom: -30px;
+  background-image: url(imgs/dots.png);
+  background-repeat: repeat;
+  z-index: -1;
+}
+
+
+.first-bar {
+    animation-name: bar1;
+    animation-duration: 1s;
+    
+    animation-timing-function: linear;
+  }
+  .second-bar {
+    animation-name: bar2;
+    animation-duration: 1s;
+    
+    animation-timing-function: linear;
+  }
+  .third-bar {
+    animation-name: bar3;
+    animation-duration: 1s;
+    
+    animation-timing-function: linear;
+  }
+  .about-btn:hover {
+    background-color: black;
+    color: white;
+  }
+
+  /* -----------Services------------- */
+  .service-title{
+    color:#343434;
+    text-decoration: underline dotted rgba(219, 216, 216, 0.966) ;
+    font-weight: 900;
+    line-height: 44px;
+    font-size: 40px;
+    font-family: Montserrat, sans-serif;
+  }
+  .icon-serv {
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon-serv .fa{
+    font-weight: 400;
+    line-height :30px;
+    text-align :center;
+    text-decoration-color: rgb(52, 52, 52);
+  }
+  .card-body:hover .icon-serv{
+    background: black;
+    color: white;
+  }
+  .card-title{
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    color: #343434;
+    line-height: 19.8px;
+    font-weight: 800;
+  }
+  .card-text{
+    font-size: 14px;
+    font-family: Poppins, sans-serif;
+    line-height: 22.4px;
+    font-weight: 400;
+    color: #748182;
+    word-spacing: 2px;
+    text-align: center;
+  }
+  .card{
+    border: white;
+  }
+/* -------------Portfolio------------ */
+.portfolio .port-nav{
+    font-size: 16px;
+    color: #222222;
+    font-weight: 700;
+    line-height: 22.8751px;
+    font-family: Poppins, sans-serif;
+}
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card img {
+  transition: transform 0.3s ease;
+}
+
+.card .overlay {
+  position: absolute;
+  top: 1.5%;
+  
+  width: 97%;
+  height: 97%;
+  left: 1.5%;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #fff;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.layer{
+  
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+}
+.layer-title{
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  position: relative;
+  margin-bottom: 15px;
+  transform: translateY(-100%);
+ transition: all 0.5s;
+ 
+}
+.card:hover .layer-title {
+  transform: translateY(20%);
+}
+.icons {
+  position: absolute;
+  bottom: 50%;
+  left :50%;
+  transform: translate(-50%, 100%);
+  transition: transform 0.2s ease;
+}
+
+.card:hover .icons {
+  transform: translate(-50%, 120%);
+}
+.layer-icon{
+ 
+  color: #343434;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.portfolio .layer-icon i {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 28px;
+  border-radius: 50%;
+  border: 1px solid #111;
+  background: #111;
+  color: #eee;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+
+/* --------------Testmonials------------ */
+.slider{
+    color: black;
+}
+.testmonial-img img{
+    width: 100%;
+    vertical-align: middle;
+}
+.testmonial-img{
+    
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 auto 15px;
+    }
+    .alex{
+        font-weight: 600;
+        line-height: 17.6px;
+        margin: 30px 0px 5px;
+        font-size: 16px;
+        color: #343434;
+        font-family: Montserrat, sans-serif;
+    }
+    .test-text{
+        font-size: 15px;
+        color: #748182;
+        line-height: 24px;
+        font-weight: 400;
+        text-align: center;
+    }
+    .carousel-indicators {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .slider .owl-dots {
+      margin-top: 10px;
+  }
+  
+  .carousel-indicators .active {
+    background-color: #343a40;
+  }
+
+  .carousel-indicators li {
+    background-color: #911d48;
+  }
+
+  .carousel-indicators .active span {
+    background-color: #212529;
+  }
+  
+  .carousel-indicators li:not(.active) span {
+    background-color: #6c757d;
+  } 
+
+  /* -----------Clients------------ */
+  .number-icon{
+    font-size: 30px;
+  }
+  .number-title{
+    font-size: 30px;
+    line-height: 33px;
+    color: #343434;
+    font-weight: 900;
+    font-family: Montserrat, sans-serif;
+  }
+  .number-text{
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #748182;
+    font-family: Poppins, sans-serif;
+  }
+  
+
+  /* ------------Our Team--------- */
+  .team-card{
+    background-color: rgba(52, 52, 52,.8);
+    border-radius: 5px;
+  }
+  .team-name{
+    color: white;
+    font-size: 25px;
+    line-height: 27.5px;
+    font-weight: 500;
+    font-family: Montserrat, sans-serif;
+  }
+  .team-text{
+    font-size: 20px;
+    color: white;
+    line-height: 22px;
+    font-weight: 700;
+  }
+  .layer-titlet{
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: relative;
+    margin-bottom: 15px;
+    transform: translateY(-100%);
+   transition: all 0.5s;
+   
+  }
+  
+.card:hover .layer-titlet {
+  transform: translateY(20%);
+}
+.card .overlayy {
+  position: absolute;
+  top: 1%;
+  width: 98%;
+  height: 76%;
+  left: 1%;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: rotateY(180deg);
+  transition: opacity 0.3s ease, transform 1s ease-out; 
+}
+
+
+.fas{
+  border: 1px solid #000;
+  color: #fff;
+  background-color: #000;
+  display: block;
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  padding-top: 10px;
+  
+}
+.card:hover .overlayy {
+  opacity: 1;
+  transform: rotateY(360deg) ; 
+  
+}
+
+.fas:hover{
+  background-color: #fff;
+  color: #000;
+}
+
+.cd img {
+  transition: transform 0.3s ease;
+}
+
+.cd img:hover img {
+  transform: scale(1.1);
+}
+
+
+
+
+.but:hover{
+background-color: white;
+border-color: black;
+color: black;
+}
+.but:hover a{
+  color: black;
+}
+  /* -----------Contact Us------------- */
+  .con-icon{
+    font-size: 25px;
+    margin-bottom: 15px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    color: #343434;
+    transition: all 0.5s;
+  }
+  .con-title{
+    color: #343434;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 17.6px;
+  }
+  .con-text{
+    color: #748182;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  /* --------footer----------- */
+  footer {
+    background: #1c1c1c;
+    padding: 30px;
+  
+}
+
+  footer p {
+    
+    word-spacing: 2px;
+    line-height: 1.6;
+    
+    font-size: 15px;
+    color: #748182;
+}
+
+
+.navbar.scrolled {
+  background-color: white !important;
+  transition: background-color 0.5s ease-in-out;
+  padding-top: 0px !important;
+  padding-bottom: 10px !important;
+}
+.navbar.scrolled .navbar-brand {
+  color: black !important;
+}
+.navbar.scrolled .nav-link {
+  color: black !important;
+}
+
+  @keyframes bar1 {
+    0% {
+      width: 50%;
+    }
+    20% {
+      width: 60%;
+    }
+    40% {
+      width: 70%;
+    }
+    60% {
+      width: 80%;
+    }
+    80% {
+      width: 90%;
+    }
+    100% {
+      width: 95%;
+    }
+  }
+  @keyframes bar2 {
+    0% {
+      width: 50%;
+    }
+    20% {
+      width: 60%;
+    }
+    40% {
+      width: 65%;
+    }
+    60% {
+      width: 70%;
+    }
+    80% {
+      width: 75%;
+    }
+    100% {
+      width: 80%;
+    }
+  }
+  @keyframes bar3 {
+    0% {
+      width: 50%;
+    }
+    20% {
+      width: 60%;
+    }
+    40% {
+      width: 70%;
+    }
+    60% {
+      width: 80%;
+    }
+    80% {
+      width: 85%;
+    }
+    100% {
+      width: 90%;
+    }
+  }
+  
+@keyframes larry {
+    0% {
+        content: " |";
+      }
+      3.448% {
+        content: " La|";
+      }
+      6.897% {
+        content: " Larr|";
+      }
+      10.345% {
+        content: " Larry D|";
+      }
+      13.793% {
+        content: " Larry Dan|";
+      }
+      17.241% {
+        content: " Larry Danie|";
+      }
+      20.689% {
+        content: " Larry Daniels|";
+      }
+      24.138% {
+        content: " Larry Danie|";
+      }
+      27.586% {
+        content: " Larry Dan|";
+      }
+      31.034% {
+        content: " Larry D|";
+      }
+      34.483% {
+        content: " Larr|";
+      }
+      37.931% {
+        content: " |";
+      }
+      41.379% {
+        content: " De|";
+      }
+      44.828% {
+        content: " Deve|";
+      }
+      48.276% {
+        content: " Develo|";
+      }
+      51.724% {
+        content: " Developer|";
+      }
+      55.172% {
+        content: " Develop|";
+      }
+      58.621% {
+        content: " Devel|";
+      }
+      62.069% {
+        content: " Dev|";
+      }
+      65.517% {
+        content: " D|";
+      }
+      68.966% {
+        content: " |";
+      }
+      72.414% {
+        content: " De|";
+      }
+      75.862% {
+        content: " Desi|";
+      }
+      79.31% {
+        content: " Design|";
+      }
+      82.759% {
+        content: " Designer|";
+      }
+      86.207% {
+        content: " Design|";
+      }
+      89.655% {
+        content: " Desi|";
+      }
+      93.103% {
+        content: " De|";
+      }
+      96.552% {
+        content: "|";
+      }
+      100% {
+        content: "|";
+      }}
+      @media screen and (max-width: 768px) {
+       .container{
+        width: 100%;
+       }
+       .col-12{
+        width: 100%;
+       }
+      .about .col-md-7{
+        margin-top:80px ;
+      }
+      .services .ser-card {
+        /* width: 30rem; */
+        /* margin-left: 0px; */
+        /* background-color: blue; */
+        /* padding: 0; */
+      }
+     
+      .services .card-body{
+       /* background-color: #343a40; */
+       /* width: 50rem; */
+       margin: 0;
+       
+       padding-bottom: 40px;
+       
+      }
+      .services .row{
+        margin-left: 0px;
+      }
+      .services .container .row{
+        width: 100%;
+      }
+      .services {
+        width: 100%;
+      }
+      .services .col-lg-4{
+        width: 100%;
+      }
+      .portfolio .card{
+        
+          margin: 0 auto;
+          max-width: 22rem;
+          width: 100%;
+        }
+        .email{
+          margin-top: 20px;
+        }
+      }
+      
